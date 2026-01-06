@@ -1,0 +1,23 @@
+Frontend={"sachin","rahul","ganguly"}
+Backend={"McGrath","warne","sachin","lee"}
+print(Frontend)
+print(Backend)
+Backend.add("Steve waugh")
+print(Backend)
+Frontend.remove("rahul")
+print(Frontend)
+print(Frontend & Backend)
+print(Backend - Frontend)
+s=(Frontend | Backend)
+print(len(s))
+diction={
+    "Frontend":3,
+    "Backend":4
+}
+
+for x, y in diction.items():
+  print("course:",x,"No_Students:", y)
+new_dict = {k: v for k, v in diction.items()}
+new_dict["Fullstack"] = (len(Frontend)+len(Backend))
+
+print(new_dict)
